@@ -6,7 +6,7 @@ const MainNav = () => {
     return (
         <Navbar className="navbar navbar-expand-lg navbar-light bg-light">
             <NavItem>
-                <a class="navbar-brand" href="#"><NavLink to="/">Home</NavLink></a>
+                <NavLink className="navbar-brand" to="/">Home</NavLink>
             </NavItem>
         </Navbar>
     )

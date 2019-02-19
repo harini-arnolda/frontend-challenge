@@ -1,4 +1,3 @@
 export default {
-    champions: {},
-    championsOfTheYear: {}
+    champions: {}
 };

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import axios from 'axios';
 
 class ViewYear extends Component {
 
@@ -9,7 +8,7 @@ class ViewYear extends Component {
         const {championsOfTheYear} = this.props;
         const {allWinners}         = this.props;
 
-        let winnerList = "Loading.....";
+        let winnerList = "Loading . . . . If you are unable to see results please go back and select an year";
         let worldChampion;
 
         if(championsOfTheYear) {
