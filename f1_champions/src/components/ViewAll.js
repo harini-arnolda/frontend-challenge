@@ -26,14 +26,14 @@ class ViewYear extends Component {
                 const raceChamps = races.Results.map( racechamps => {
 
                     return (
-                        <li key={racechamps.number} className={(worldChampion === racechamps.Driver.driverId)
-                            ? "list-group-item list-group-item-info" : "list-group-item"}>
-                                Race Name: {races.raceName} <br />
-                                Race Round: {races.round} <br />
-                                Constructor: {racechamps.Constructor.name} <br />
-                                Constructor Nationality: {racechamps.Constructor.nationality} <br />
-                                Drivers Name: {racechamps.Driver.familyName} {racechamps.Driver.givenName} <br />
-                                Nationality: {racechamps.Driver.nationality} <br />
+                        <li key={racechamps.number} className= {(worldChampion === racechamps.Driver.driverId)
+                            ? "list-group-item-action text-dark list-group-item-danger" : "list-group-item-action text-dark"}>
+                                <h5>Race Name: <small>{races.raceName}</small> </h5>
+                                <h5>Race Round: <small>{races.round}</small> </h5>
+                                <h5>Constructor: <small>{racechamps.Constructor.name}</small> </h5>
+                                <h5>Constructor Nationality: <small>{racechamps.Constructor.nationality}</small> </h5>
+                                <h5>Drivers Name: <small>{racechamps.Driver.familyName} {racechamps.Driver.givenName}</small> </h5>
+                                <h5>Nationality: <small>{racechamps.Driver.nationality}</small> </h5>
                         </li>
                     );
 
@@ -46,7 +46,7 @@ class ViewYear extends Component {
         }
 
         return (
-            <div className="jumbotron">
+            <div className="jumbotron bg-dark text-danger">
                 <h1>F1 races for the year</h1>
                 <p className="lead">Shows all the races for the year and the highlighted rows show the world champion for the year</p>
                 <hr className="my-4"/>
