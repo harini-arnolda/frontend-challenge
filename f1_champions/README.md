@@ -1,4 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# F1 Champions
+This project shows the F1 world champions form 2005 to 2015 and records of the races for the same years.
+
+## prerequisite
+Make sure you have node and npm installed in your machine.
+
+## Installation
+Download the project form (https://github.com/harini-arnolda/frontend-challenge.git).
+
+Use the npm package manager to install needed packages.
+
+```bash
+cd f1_champions
+npm install
+```
 
 ## Available Scripts
 
@@ -9,13 +23,9 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -23,46 +33,21 @@ Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How it has been implemented.
 
-### `npm run eject`
+### Project uses the react-redux architecture. Please refer the below details on understand how it has been implemented.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project was setup using [Create React App](https://github.com/facebook/create-react-app) and customized to facilitate the requirements.<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Code structure used is a slight variation of "Rails-Style" structure where actions components and reducers are put into separate folders.<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Redux is used in order to manage the state of the application.<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Redux-Thunk is used to handle asynchronous actions in Redux.<br>
 
-## Learn More
+The project consist of two container components which interacts with the redux store and presentational components to render html elements and to pass props through the container tree Provider is used.<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Styling is mainly done with react-bootstarp to ensure accessibility and responsiveness. Customized styles have also been included.<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Axios is used to make XMLHttpRequests from the browser.
