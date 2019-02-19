@@ -1,7 +1,7 @@
 # F1 Champions
 This project shows the F1 world champions form 2005 to 2015 and records of the races for the same years.
 
-## prerequisite
+## Prerequisite
 Make sure you have node and npm installed in your machine.
 
 ## Installation
@@ -23,10 +23,6 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -36,11 +32,11 @@ The build is minified and the filenames include the hashes.<br>
 
 ## How it has been implemented.
 
-### Project uses the react-redux architecture. Please refer the below details on understand how it has been implemented.
+### Project uses the react-redux architecture. Please refer the below details to understand how it has been implemented.
 
 The project was setup using [Create React App](https://github.com/facebook/create-react-app) and customized to facilitate the requirements.<br>
 
-The Code structure used is a slight variation of "Rails-Style" structure where actions components and reducers are put into separate folders.<br>
+The Code structure used is a slight variation of "Rails-Style" structure where actions, components and reducers are put into separate folders.<br>
 
 Redux is used in order to manage the state of the application.<br>
 

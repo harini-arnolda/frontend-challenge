@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MainNav from './components/Navbar';
+import MainNav from './components/MainNav';
 import Home from './components/Home';
 import ViewAll from './components/ViewAll';
 import { BrowserRouter, Route } from 'react-router-dom'
