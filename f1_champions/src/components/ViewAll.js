@@ -47,8 +47,8 @@ class ViewYear extends Component {
 
         return (
             <div className="jumbotron bg-dark text-danger">
-                <h1>F1 races for the year</h1>
-                <p className="lead">Shows all the races for the year and the highlighted rows show the world champion for the year</p>
+                <h1>F1 <span className="text-light">races for the year</span></h1>
+                <p className="lead text-light">Shows all the races for the year and the highlighted rows show the world champion for the year</p>
                 <hr className="my-4"/>
                 <ul className="list-group">
                     {winnerList}

@@ -22,8 +22,8 @@ class Home extends Component {
 
         return (
             <div className="jumbotron bg-dark text-danger">
-                <h1>F1 World Champions</h1>
-                <p className="lead">This lists all the champions of F1 seasons from 2005 to 2015. Clicking on an item
+                <h1>F1 <span className="text-light">World Champions</span></h1>
+                <p className="lead text-light">This lists all the champions of F1 seasons from 2005 to 2015. Clicking on an item
                 shows the list of the winners for every race for the selected year.</p>
                 <hr className="my-4"/>
                 <Winners winners={allWinners} selectYear={this.selectYear}/>

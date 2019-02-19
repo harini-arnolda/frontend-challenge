@@ -1,17 +1,25 @@
 # F1 Champions
-This project shows the F1 world champions form 2005 to 2015 and records of the races for the same years.
+F1 Champions application shows F1 world champions form 2005 to 2015 and allows the user to select an year to get all the records of the races for the selected year. It also highlights the world champion from the list.
 
 ## Prerequisite
-Make sure you have node and npm installed in your machine.
+Please make sure following tools are installed/configured before trying this.<br>
+* nodejs<br>
+* npm (package manger)<br>
+* Any web browser
 
 ## Installation
-Download the project form (https://github.com/harini-arnolda/frontend-challenge.git).
+1. Download the project form (https://github.com/harini-arnolda/frontend-challenge.git).
 
-Use the npm package manager to install needed packages.
+2. Use the npm package manager to install needed packages.
 
 ```bash
 cd f1_champions
 npm install
+```
+3. Start the project using the bellow scripts
+
+```bash
+npm start
 ```
 
 ## Available Scripts
